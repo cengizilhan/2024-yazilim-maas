@@ -54,8 +54,7 @@ window.addEventListener("load", function (event) {
         ]);
 
         console.table(result);
-        this.genders = result;
-
+       
         this.createChart(result, "Kadın / Erkek Oranı", "pie");
       },
       getSalaries() {
@@ -70,7 +69,7 @@ window.addEventListener("load", function (event) {
         ]);
 
         console.table(result);
-        this.genders = result;
+       
         this.createChart(result, "Maaş Aralıkları", "bar");
       },
       //yan haklar problemli. bakılcak.
@@ -83,7 +82,7 @@ window.addEventListener("load", function (event) {
         ]);
 
         console.table(result);
-        this.genders = result;
+       
         this.createChart(result, "Yan Haklarınız", "bar", "y");
       },
       getExp() {
@@ -95,7 +94,7 @@ window.addEventListener("load", function (event) {
         ]);
 
         console.table(result);
-        this.genders = result;
+       
         this.createChart(result, "Deneyim Aralığı", "bar");
       },
       getCompanyLoc() {
@@ -110,7 +109,7 @@ window.addEventListener("load", function (event) {
         ]);
 
         console.table(result);
-        this.genders = result;
+       
         this.createChart(result, "Şirketiniz hangi lokasyon merkezli?", "bar");
       },
       getCompanyCityIfTurkey() {
@@ -124,7 +123,7 @@ window.addEventListener("load", function (event) {
         ]);
 
         console.table(result);
-        this.genders = result;
+       
         this.createChart(
           result,
           "Şirketiniz hangi şehirde? (Eğer Türkiye ise)",
@@ -139,7 +138,7 @@ window.addEventListener("load", function (event) {
         ]);
 
         console.table(result);
-        this.genders = result;
+       
         this.createChart(result, "Çalışma şekliniz nedir?", "bar");
       },
       getEmployeeCount() {
@@ -153,7 +152,7 @@ window.addEventListener("load", function (event) {
         ]);
 
         console.table(result);
-        this.genders = result;
+       
         this.createChart(result, "Şirketinizin çalışan sayısı nedir?", "bar");
       },
       getPositions() {
@@ -167,7 +166,7 @@ window.addEventListener("load", function (event) {
         ]);
 
         console.table(result);
-        this.genders = result;
+       
         this.createChart(
           result,
           "Hangi pozisyonda çalışıyorsunuz?",
@@ -186,7 +185,7 @@ window.addEventListener("load", function (event) {
         ]);
 
         console.table(result);
-        this.genders = result;
+       
         this.createChart(
           result,
           "Çalıştığınız şirketteki unvanınız nedir?",
@@ -205,7 +204,7 @@ window.addEventListener("load", function (event) {
         ]);
 
         console.table(result);
-        this.genders = result;
+       
         this.createChart(
           result,
           "Ağırlıklı olarak hangi teknolojileri / dilleri kullanıyorsunuz?",
@@ -224,7 +223,7 @@ window.addEventListener("load", function (event) {
         ]);
 
         console.table(result);
-        this.genders = result;
+       
         this.createChart(result, "Kazancınız hangi para biriminde?", "pie");
       },
       getIncreaseSalaryCount() {
@@ -238,7 +237,7 @@ window.addEventListener("load", function (event) {
         ]);
 
         console.table(result);
-        this.genders = result;
+       
         this.createChart(result, "Senede kaç kez zam alıyorsunuz?", "pie", "x");
       },
       getIncreaseSalaryRatio() {
@@ -252,7 +251,7 @@ window.addEventListener("load", function (event) {
         ]);
 
         console.table(result);
-        this.genders = result;
+       
         this.createChart(
           result,
           "Ara zam / iyileştirme oranınız hangi aralıkta?",
@@ -270,7 +269,7 @@ window.addEventListener("load", function (event) {
           value.length,
         ]);
         console.table(result);
-        this.genders = result;
+       
         this.createChart(
           result,
           "Yemek kartınız varsa günlük güncel miktar nedir?",
@@ -400,7 +399,6 @@ window.addEventListener("load", function (event) {
 
         return color;
       },
-    
       runDataGrid() {
         //create Tabulator on DOM element with id "example-table"
         var table = new Tabulator("#example-table", {
@@ -545,7 +543,7 @@ window.addEventListener("load", function (event) {
               title:
                 'Maaş / Aylık Türk Lirası cinsinden (Ortalama "NET" ücret)',
               field:
-                'Maaş / Aylık Türk Lirası cinsinden (Ortalama "NET" ücret)',
+              'Maaş / Aylık Türk Lirası cinsinden          (Ortalama "NET" ücret)',
               hozAlign: "center",
             },
           ],
