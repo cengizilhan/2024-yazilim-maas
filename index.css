@@ -1,0 +1,10 @@
+#charts{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    
+}
+#charts > * {
+    border-top: 1px solid black;
+    padding-top: 20px;
+}
