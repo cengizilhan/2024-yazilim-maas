@@ -22,24 +22,23 @@ Libraries/Scripts Used:
 - chart.js
 
 TR:
+
 2024 - 1 BT / Yazılım Sektörü Maaş Anketi Sonuçları
 
-Maaş anket sonuçlarını charts / grid table olarak yayınlayabilmek için çalışma yapıldı.
+Anketi Gerçekleştiren: Anketman / Altuğ: https://twitter.com/AltugAkgul
+Frontend Hazırlayan: Sawacrow: https://twitter.com/sawacrow
 
-Survey by: Anketman / Altuğ: https://twitter.com/AltugAkgul
-Frontend by: Sawacrow: https://twitter.com/sawacrow
+Proje İşleyiş Özeti:
+- Excel'deki veriler CSV'ye dönüştürüldü, ardından JSON'a çevrildi ve yerel bir JSON dosyası olarak kaydedildi.
+- Vue.js CDN olarak kullanıldı.
+- Chart.js için dinamik bir yöntem uygulandı.
+- Veriler lodash.js ile gruplandı ve benzersiz hale getirildi, sonra Chart.js'e gönderildi.
+- Böylece her bir Chart.js yöntemi için ilgili sütun için farklı bir Chart.js bölümü oluşturuldu.
+- Tabulator.js, filtreleme, sıralama ve sayfalama özelliklerinden dolayı datagrid tablosu için kullanıldı.
 
-Proje işleyiş özeti:
--Excel'deki datalar CSV'e, sonrasında Json'a convertlenip, local json dosyası olarak kayıt edildi.
--Vue.js CDN olarak kullanıldı.
--Chart.js için dinamik bir method uygulandı.
--lodash.js ile datalar group-by/unique yapılıp, chart.js'e gönderildi.
--Böylece her chart.js methodunda ilgili column için farklı bir chart.js bölümü render edildi.
--Datagrid table için tabulator.js kullanıldı. Filter, sorting ve pagination özelliklerinin olmasından dolayı seçildi.
-
-Kullanılan kütüphanaler / script'ler:
--lodash.js
--tabulator.js
--vue.js
--bootstrap
--chart.js
+Kullanılan Kütüphaneler / Script'ler:
+- lodash.js
+- tabulator.js
+- vue.js
+- bootstrap
+- chart.js
