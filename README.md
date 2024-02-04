@@ -1,6 +1,8 @@
 
 2024 - 1 BT / Software Sector Salary Survey Results
 
+Live: https://cengizilhan.com/2024-yazilim-bt-maas/
+
 Efforts were made to publish the salary survey results in charts/grid tables.
 
 Survey by: Anketman / Altuğ: https://twitter.com/AltugAkgul
