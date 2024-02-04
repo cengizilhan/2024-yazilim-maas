@@ -1,6 +1,5 @@
 window.addEventListener("load", function (event) {
   const { createApp } = Vue;
-
   createApp({
     data() {
       return {
@@ -39,26 +38,21 @@ window.addEventListener("load", function (event) {
             this.getIncreaseSalaryRatio();
             this.getDailyFoodPrice();
             this.runDataGrid();
-            
           })
           .catch((error) => {
             console.error("There was a problem fetching the data:", error);
           });
       },
       getGenders() {
-        console.log("thistableer", this.table);
         const groupedCounts = _.groupBy(this.table, "Cinsiyet");
         const result = _.map(groupedCounts, (value, key) => [
           key,
           value.length,
         ]);
 
-        console.table(result);
-       
         this.createChart(result, "Kadın / Erkek Oranı", "pie");
       },
       getSalaries() {
-        console.log("thistableer", this.table);
         const groupedCounts = _.groupBy(
           this.table,
           'Maaş / Aylık Türk Lirası cinsinden          (Ortalama "NET" ücret)'
@@ -68,37 +62,28 @@ window.addEventListener("load", function (event) {
           value.length,
         ]);
 
-        console.table(result);
-       
         this.createChart(result, "Maaş Aralıkları", "bar");
       },
       //yan haklar problemli. bakılcak.
       getBenefits() {
-        console.log("thistableer", this.table);
         const groupedCounts = _.groupBy(this.table, "Yan haklarınız");
         const result = _.map(groupedCounts, (value, key) => [
           key,
           value.length,
         ]);
 
-        console.table(result);
-       
         this.createChart(result, "Yan Haklarınız", "bar", "y");
       },
       getExp() {
-        console.log("thistableer", this.table);
         const groupedCounts = _.groupBy(this.table, "Deneyim");
         const result = _.map(groupedCounts, (value, key) => [
           key,
           value.length,
         ]);
 
-        console.table(result);
-       
         this.createChart(result, "Deneyim Aralığı", "bar");
       },
       getCompanyLoc() {
-        console.log("thistableer", this.table);
         const groupedCounts = _.groupBy(
           this.table,
           "Şirketiniz hangi lokasyon merkezli?"
@@ -108,8 +93,6 @@ window.addEventListener("load", function (event) {
           value.length,
         ]);
 
-        console.table(result);
-       
         this.createChart(result, "Şirketiniz hangi lokasyon merkezli?", "bar");
       },
       getCompanyCityIfTurkey() {
@@ -122,8 +105,6 @@ window.addEventListener("load", function (event) {
           value.length,
         ]);
 
-        console.table(result);
-       
         this.createChart(
           result,
           "Şirketiniz hangi şehirde? (Eğer Türkiye ise)",
@@ -137,8 +118,6 @@ window.addEventListener("load", function (event) {
           value.length,
         ]);
 
-        console.table(result);
-       
         this.createChart(result, "Çalışma şekliniz nedir?", "bar");
       },
       getEmployeeCount() {
@@ -151,8 +130,6 @@ window.addEventListener("load", function (event) {
           value.length,
         ]);
 
-        console.table(result);
-       
         this.createChart(result, "Şirketinizin çalışan sayısı nedir?", "bar");
       },
       getPositions() {
@@ -165,8 +142,6 @@ window.addEventListener("load", function (event) {
           value.length,
         ]);
 
-        console.table(result);
-       
         this.createChart(
           result,
           "Hangi pozisyonda çalışıyorsunuz?",
@@ -184,8 +159,6 @@ window.addEventListener("load", function (event) {
           value.length,
         ]);
 
-        console.table(result);
-       
         this.createChart(
           result,
           "Çalıştığınız şirketteki unvanınız nedir?",
@@ -203,8 +176,6 @@ window.addEventListener("load", function (event) {
           value.length,
         ]);
 
-        console.table(result);
-       
         this.createChart(
           result,
           "Ağırlıklı olarak hangi teknolojileri / dilleri kullanıyorsunuz?",
@@ -222,8 +193,6 @@ window.addEventListener("load", function (event) {
           value.length,
         ]);
 
-        console.table(result);
-       
         this.createChart(result, "Kazancınız hangi para biriminde?", "pie");
       },
       getIncreaseSalaryCount() {
@@ -236,8 +205,6 @@ window.addEventListener("load", function (event) {
           value.length,
         ]);
 
-        console.table(result);
-       
         this.createChart(result, "Senede kaç kez zam alıyorsunuz?", "pie", "x");
       },
       getIncreaseSalaryRatio() {
@@ -250,8 +217,6 @@ window.addEventListener("load", function (event) {
           value.length,
         ]);
 
-        console.table(result);
-       
         this.createChart(
           result,
           "Ara zam / iyileştirme oranınız hangi aralıkta?",
@@ -268,8 +233,7 @@ window.addEventListener("load", function (event) {
           key,
           value.length,
         ]);
-        console.table(result);
-       
+
         this.createChart(
           result,
           "Yemek kartınız varsa günlük güncel miktar nedir?",
@@ -543,7 +507,7 @@ window.addEventListener("load", function (event) {
               title:
                 'Maaş / Aylık Türk Lirası cinsinden (Ortalama "NET" ücret)',
               field:
-              'Maaş / Aylık Türk Lirası cinsinden          (Ortalama "NET" ücret)',
+                'Maaş / Aylık Türk Lirası cinsinden          (Ortalama "NET" ücret)',
               hozAlign: "center",
             },
           ],
