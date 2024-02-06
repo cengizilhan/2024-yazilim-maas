@@ -23,6 +23,8 @@ Libraries/Scripts Used:
 - bootstrap
 - chart.js
 
+Production time: 6 hours
+
 TR:
 
 2024 - 1 BT / Yazılım Sektörü Maaş Anketi Sonuçları
